@@ -79,7 +79,7 @@ class Common   extends Controller
      * @return [type] [array]
      */
     public function dataAction(){
-        $ress='';
+        $ress= [];
         $data=input('post.');
         foreach ($data as $k => $v) {
             $ress[$k]=trim($v);
