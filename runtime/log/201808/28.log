@@ -1,0 +1,1239 @@
+---------------------------------------------------------------
+[ 2018-08-28T10:11:39+08:00 ] ::1 ::1 GET /
+[ info ] newlc.lc/ [运行时间：0.156523s][吞吐率：6.39req/s] [内存消耗：4,107.48kb] [文件加载：54]
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'newlc.lc',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/public/../application/backend/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '86400',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=localhost;port=3306;dbname=new;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_config` [ RunTime:0.007663s ]
+[ sql ] [ SQL ] SELECT * FROM `n_config` [ RunTime:0.001861s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_auth_rule` [ RunTime:0.004770s ]
+[ sql ] [ SQL ] SELECT * FROM `n_auth_rule` WHERE  `name` = 'backend/Index/index' LIMIT 1 [ RunTime:0.005911s ]
+---------------------------------------------------------------
+[ 2018-08-28T10:11:39+08:00 ] ::1 ::1 GET /backend/login
+[ info ] newlc.lc/backend/login [运行时间：0.073957s][吞吐率：13.52req/s] [内存消耗：3,228.52kb] [文件加载：51]
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'newlc.lc',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://newlc.lc/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=00a99467b1912b0612ac617231c01a9c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/public/../application/backend/lang/zh-cn.php
+[ info ] [ RUN ] app\backend\controller\Login->index[ /Users/modou/Works/web/newlc/application/backend/controller/Login.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /Users/modou/Works/web/newlc/public/../application/backend/view/login/index.html [ array (
+  0 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-28T10:11:39+08:00 ] ::1 ::1 GET /backend/login/captcha.html
+[ info ] newlc.lc/backend/login/captcha.html [运行时间：0.106844s][吞吐率：9.36req/s] [内存消耗：2,847.07kb] [文件加载：45]
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'login',
+    2 => 'captcha',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'newlc.lc',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://newlc.lc/backend/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=00a99467b1912b0612ac617231c01a9c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/public/../application/backend/lang/zh-cn.php
+[ info ] [ RUN ] app\backend\controller\Login->captcha[ /Users/modou/Works/web/newlc/application/backend/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '86400',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-28T10:11:47+08:00 ] ::1 ::1 POST /backend/login/dologin.html
+[ info ] newlc.lc/backend/login/dologin.html [运行时间：0.171244s][吞吐率：5.84req/s] [内存消耗：5,076.07kb] [文件加载：65]
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'login',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'newlc.lc',
+  'connection' => 'keep-alive',
+  'content-length' => '58',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://newlc.lc',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://newlc.lc/backend/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=00a99467b1912b0612ac617231c01a9c',
+)
+[ info ] [ PARAM ] array (
+  'admin_name' => 'admin',
+  'admin_password' => '123456',
+  'yzm' => '1643',
+  'pwdcount' => '5',
+)
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/public/../application/backend/lang/zh-cn.php
+[ info ] [ RUN ] app\backend\controller\Login->dologin[ /Users/modou/Works/web/newlc/application/backend/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '86400',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000510s ] mysql:host=localhost;port=3306;dbname=new;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_admin_user` [ RunTime:0.006418s ]
+[ sql ] [ SQL ] SELECT * FROM `n_admin_user` WHERE  `admin_name` = 'admin' LIMIT 1 [ RunTime:0.002314s ]
+[ sql ] [ SQL ] SELECT * FROM `n_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001925s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_auth_group` [ RunTime:0.005019s ]
+[ sql ] [ SQL ] SELECT `group_name`,`rules` FROM `n_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002400s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_auth_rule` [ RunTime:0.005424s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`title`,`ord`,`icon` FROM `n_auth_rule` WHERE  `id` IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14)  AND `left_nav` = 1 ORDER BY `ord` [ RunTime:0.006505s ]
+[ sql ] [ SQL ] UPDATE `n_admin_user`  SET `login_time`=1535422307  WHERE  `id` = 1 [ RunTime:0.003897s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_login_log` [ RunTime:0.004791s ]
+[ error ] [0]数据表字段不存在:[auid][/Users/modou/Works/web/newlc/thinkphp/library/think/db/Builder.php:109]
+---------------------------------------------------------------
+[ 2018-08-28T10:11:57+08:00 ] ::1 ::1 POST /backend/login/dologin.html
+[ info ] newlc.lc/backend/login/dologin.html [运行时间：0.292265s][吞吐率：3.42req/s] [内存消耗：2,880.38kb] [文件加载：46]
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'login',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'newlc.lc',
+  'connection' => 'keep-alive',
+  'content-length' => '58',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://newlc.lc',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://newlc.lc/backend/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=00a99467b1912b0612ac617231c01a9c',
+)
+[ info ] [ PARAM ] array (
+  'admin_name' => 'admin',
+  'admin_password' => '123456',
+  'yzm' => '1643',
+  'pwdcount' => '5',
+)
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/public/../application/backend/lang/zh-cn.php
+[ info ] [ RUN ] app\backend\controller\Login->dologin[ /Users/modou/Works/web/newlc/application/backend/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '86400',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-28T10:12:00+08:00 ] ::1 ::1 GET /backend/login/captcha.html?num=0.8942532753946031
+[ info ] newlc.lc/backend/login/captcha.html?num=0.8942532753946031 [运行时间：0.051921s][吞吐率：19.26req/s] [内存消耗：2,868.40kb] [文件加载：45]
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'login',
+    2 => 'captcha',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'newlc.lc',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://newlc.lc/backend/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=00a99467b1912b0612ac617231c01a9c',
+)
+[ info ] [ PARAM ] array (
+  'num' => '0.8942532753946031',
+)
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/public/../application/backend/lang/zh-cn.php
+[ info ] [ RUN ] app\backend\controller\Login->captcha[ /Users/modou/Works/web/newlc/application/backend/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '86400',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-28T10:12:05+08:00 ] ::1 ::1 POST /backend/login/dologin.html
+[ info ] newlc.lc/backend/login/dologin.html [运行时间：0.156724s][吞吐率：6.38req/s] [内存消耗：5,075.73kb] [文件加载：65]
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'login',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'newlc.lc',
+  'connection' => 'keep-alive',
+  'content-length' => '58',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://newlc.lc',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://newlc.lc/backend/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=00a99467b1912b0612ac617231c01a9c',
+)
+[ info ] [ PARAM ] array (
+  'admin_name' => 'admin',
+  'admin_password' => '123456',
+  'yzm' => '9339',
+  'pwdcount' => '5',
+)
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/public/../application/backend/lang/zh-cn.php
+[ info ] [ RUN ] app\backend\controller\Login->dologin[ /Users/modou/Works/web/newlc/application/backend/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '86400',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000466s ] mysql:host=localhost;port=3306;dbname=new;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_admin_user` [ RunTime:0.005640s ]
+[ sql ] [ SQL ] SELECT * FROM `n_admin_user` WHERE  `admin_name` = 'admin' LIMIT 1 [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SELECT * FROM `n_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_auth_group` [ RunTime:0.004889s ]
+[ sql ] [ SQL ] SELECT `group_name`,`rules` FROM `n_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001669s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_auth_rule` [ RunTime:0.003851s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`title`,`ord`,`icon` FROM `n_auth_rule` WHERE  `id` IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14)  AND `left_nav` = 1 ORDER BY `ord` [ RunTime:0.000654s ]
+[ sql ] [ SQL ] UPDATE `n_admin_user`  SET `login_time`=1535422325  WHERE  `id` = 1 [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_login_log` [ RunTime:0.004567s ]
+[ error ] [0]数据表字段不存在:[auid][/Users/modou/Works/web/newlc/thinkphp/library/think/db/Builder.php:109]
+---------------------------------------------------------------
+[ 2018-08-28T10:13:15+08:00 ] ::1 ::1 GET /backend/login/captcha.html?num=0.925899405989413
+[ info ] newlc.lc/backend/login/captcha.html?num=0.925899405989413 [运行时间：0.115879s][吞吐率：8.63req/s] [内存消耗：2,868.53kb] [文件加载：45]
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'login',
+    2 => 'captcha',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'newlc.lc',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://newlc.lc/backend/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=00a99467b1912b0612ac617231c01a9c',
+)
+[ info ] [ PARAM ] array (
+  'num' => '0.925899405989413',
+)
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/public/../application/backend/lang/zh-cn.php
+[ info ] [ RUN ] app\backend\controller\Login->captcha[ /Users/modou/Works/web/newlc/application/backend/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '86400',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-28T10:13:19+08:00 ] ::1 ::1 POST /backend/login/dologin.html
+[ info ] newlc.lc/backend/login/dologin.html [运行时间：0.168873s][吞吐率：5.92req/s] [内存消耗：5,062.79kb] [文件加载：64]
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'login',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'newlc.lc',
+  'connection' => 'keep-alive',
+  'content-length' => '58',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://newlc.lc',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://newlc.lc/backend/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=00a99467b1912b0612ac617231c01a9c',
+)
+[ info ] [ PARAM ] array (
+  'admin_name' => 'admin',
+  'admin_password' => '123456',
+  'yzm' => '9365',
+  'pwdcount' => '5',
+)
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/public/../application/backend/lang/zh-cn.php
+[ info ] [ RUN ] app\backend\controller\Login->dologin[ /Users/modou/Works/web/newlc/application/backend/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '86400',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000462s ] mysql:host=localhost;port=3306;dbname=new;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_admin_user` [ RunTime:0.007327s ]
+[ sql ] [ SQL ] SELECT * FROM `n_admin_user` WHERE  `admin_name` = 'admin' LIMIT 1 [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SELECT * FROM `n_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_auth_group` [ RunTime:0.005517s ]
+[ sql ] [ SQL ] SELECT `group_name`,`rules` FROM `n_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_auth_rule` [ RunTime:0.005682s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`title`,`ord`,`icon` FROM `n_auth_rule` WHERE  `id` IN (2,11,12,3,13,14,16,4,8,9,1,10,5,6,7)  AND `left_nav` = 1 ORDER BY `ord` [ RunTime:0.000708s ]
+[ sql ] [ SQL ] UPDATE `n_admin_user`  SET `login_time`=1535422399  WHERE  `id` = 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_login_log` [ RunTime:0.003828s ]
+[ sql ] [ SQL ] INSERT INTO `n_login_log` (`auid` , `group_id` , `login_time` , `ip`) VALUES (1 , 1 , 1535422399 , '0.0.0.0') [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_admin_pwdcount` [ RunTime:0.005325s ]
+[ sql ] [ SQL ] DELETE FROM `n_admin_pwdcount`    WHERE  `admin_name` = 'admin' [ RunTime:0.001431s ]
+---------------------------------------------------------------
+[ 2018-08-28T10:13:19+08:00 ] ::1 ::1 GET /backend/index/index.html
+[ info ] newlc.lc/backend/index/index.html [运行时间：0.089586s][吞吐率：11.16req/s] [内存消耗：4,125.50kb] [文件加载：54]
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'newlc.lc',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://newlc.lc/backend/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=00a99467b1912b0612ac617231c01a9c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/public/../application/backend/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '86400',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Index->index[ /Users/modou/Works/web/newlc/application/backend/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000362s ] mysql:host=localhost;port=3306;dbname=new;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_auth_rule` [ RunTime:0.004194s ]
+[ sql ] [ SQL ] SELECT * FROM `n_auth_rule` WHERE  `name` = 'backend/Index/index' LIMIT 1 [ RunTime:0.000878s ]
+---------------------------------------------------------------
+[ 2018-08-28T10:13:19+08:00 ] ::1 ::1 GET /backend/index/index
+[ info ] newlc.lc/backend/index/index [运行时间：0.161659s][吞吐率：6.19req/s] [内存消耗：4,520.73kb] [文件加载：59]
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'newlc.lc',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://newlc.lc/backend/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=00a99467b1912b0612ac617231c01a9c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/public/../application/backend/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '86400',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Index->index[ /Users/modou/Works/web/newlc/application/backend/controller/Index.php ]
+[ info ] [ VIEW ] /Users/modou/Works/web/newlc/public/../application/backend/view/index/index.html [ array (
+  0 => 'config',
+  1 => 'navlist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000285s ] mysql:host=localhost;port=3306;dbname=new;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_auth_rule` [ RunTime:0.005369s ]
+[ sql ] [ SQL ] SELECT * FROM `n_auth_rule` WHERE  `name` = 'backend/Index/index' LIMIT 1 [ RunTime:0.000476s ]
+---------------------------------------------------------------
+[ 2018-08-28T10:13:20+08:00 ] ::1 ::1 GET /backend/index/home/console.html
+[ info ] newlc.lc/backend/index/home/console.html [运行时间：0.365164s][吞吐率：2.74req/s] [内存消耗：5,208.07kb] [文件加载：62]
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'index',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'newlc.lc',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://newlc.lc/backend/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=00a99467b1912b0612ac617231c01a9c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/public/../application/backend/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '86400',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Index->home[ /Users/modou/Works/web/newlc/application/backend/controller/Index.php ]
+[ info ] [ VIEW ] /Users/modou/Works/web/newlc/public/../application/backend/view/index/home.html [ array (
+  0 => 'config',
+  1 => 'systemInfo',
+  2 => 'info',
+  3 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000643s ] mysql:host=localhost;port=3306;dbname=new;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_auth_rule` [ RunTime:0.007795s ]
+[ sql ] [ SQL ] SELECT * FROM `n_auth_rule` WHERE  `name` = 'backend/Index/home' LIMIT 1 [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_customer` [ RunTime:0.007098s ]
+[ sql ] [ SQL ] SELECT count(t.id) as count,`t1`.`name` FROM `n_customer` `t` LEFT JOIN `n_customer_cate` `t1` ON `t`.`cate_id`=`t1`.`id` WHERE  (  1=1 ) GROUP BY `t`.`cate_id` ORDER BY t1.ord desc,t1.id desc [ RunTime:0.004728s ]
+[ sql ] [ SQL ] SELECT count(id) as ocount, date_format(FROM_UNIXTIME( `ctime`),'%m月%d日') odate  FROM `n_customer` where   `ctime`>1532830400 and `ctime`<1535471999 group by odate [ RunTime:0.007012s ]
+---------------------------------------------------------------
+[ 2018-08-28T10:13:21+08:00 ] ::1 ::1 GET /backend/Customer/getData?page=1&limit=10
+[ info ] newlc.lc/backend/Customer/getData?page=1&limit=10 [运行时间：0.260495s][吞吐率：3.84req/s] [内存消耗：4,980.19kb] [文件加载：59]
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'Customer',
+    2 => 'getData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'newlc.lc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'referer' => 'http://newlc.lc/backend/index/home/console.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=00a99467b1912b0612ac617231c01a9c',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/public/../application/backend/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '86400',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Customer->getData[ /Users/modou/Works/web/newlc/application/backend/controller/Customer.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000660s ] mysql:host=localhost;port=3306;dbname=new;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_auth_rule` [ RunTime:0.004831s ]
+[ sql ] [ SQL ] SELECT * FROM `n_auth_rule` WHERE  `name` = 'backend/Customer/getdata' LIMIT 1 [ RunTime:0.001075s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_customer` [ RunTime:0.005031s ]
+[ sql ] [ SQL ] SELECT `t`.*,t1.name as cate_name,t2.name as from_name,`t3`.`real_name`,`t4`.`group_name` FROM `n_customer` `t` LEFT JOIN `n_customer_cate` `t1` ON `t`.`cate_id`=`t1`.`id` LEFT JOIN `n_customer_from` `t2` ON `t`.`from`=`t2`.`id` LEFT JOIN `n_admin_user` `t3` ON `t`.`auid`=`t3`.`id` LEFT JOIN `n_auth_group` `t4` ON `t`.`group_id`=`t4`.`id` ORDER BY t.status desc,t.ord desc,t.id desc LIMIT 0,10 [ RunTime:0.006093s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `n_customer` `t` LEFT JOIN `n_customer_cate` `t1` ON `t`.`cate_id`=`t1`.`id` LEFT JOIN `n_customer_from` `t2` ON `t`.`from`=`t2`.`id` LIMIT 1 [ RunTime:0.001671s ]
+---------------------------------------------------------------
+[ 2018-08-28T10:13:39+08:00 ] ::1 ::1 GET /backend/rule/grouplist.html
+[ info ] newlc.lc/backend/rule/grouplist.html [运行时间：0.228705s][吞吐率：4.37req/s] [内存消耗：5,309.25kb] [文件加载：65]
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'rule',
+    2 => 'grouplist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'newlc.lc',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://newlc.lc/backend/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=00a99467b1912b0612ac617231c01a9c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/public/../application/backend/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '86400',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Rule->groupList[ /Users/modou/Works/web/newlc/application/backend/controller/Rule.php ]
+[ info ] [ VIEW ] /Users/modou/Works/web/newlc/public/../application/backend/view/rule/grouplist.html [ array (
+  0 => 'config',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000551s ] mysql:host=localhost;port=3306;dbname=new;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_auth_rule` [ RunTime:0.005604s ]
+[ sql ] [ SQL ] SELECT * FROM `n_auth_rule` WHERE  `name` = 'backend/Rule/grouplist' LIMIT 1 [ RunTime:0.002653s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_auth_group` [ RunTime:0.003604s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `n_auth_group` WHERE  (  1=1 ) LIMIT 1 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT * FROM `n_auth_group` WHERE  (  1=1 ) ORDER BY status desc,id desc LIMIT 0,15 [ RunTime:0.000402s ]
+---------------------------------------------------------------
+[ 2018-08-28T10:13:42+08:00 ] ::1 ::1 GET /backend/customer/index.html
+[ info ] newlc.lc/backend/customer/index.html [运行时间：0.139479s][吞吐率：7.17req/s] [内存消耗：5,380.67kb] [文件加载：64]
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'customer',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'newlc.lc',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://newlc.lc/backend/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=00a99467b1912b0612ac617231c01a9c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/public/../application/backend/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '86400',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Customer->index[ /Users/modou/Works/web/newlc/application/backend/controller/Customer.php ]
+[ info ] [ VIEW ] /Users/modou/Works/web/newlc/public/../application/backend/view/customer/index.html [ array (
+  0 => 'config',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000390s ] mysql:host=localhost;port=3306;dbname=new;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_auth_rule` [ RunTime:0.003964s ]
+[ sql ] [ SQL ] SELECT * FROM `n_auth_rule` WHERE  `name` = 'backend/Customer/index' LIMIT 1 [ RunTime:0.000738s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_customer_cate` [ RunTime:0.005296s ]
+[ sql ] [ SQL ] SELECT * FROM `n_customer_cate` WHERE  `status` = 1 ORDER BY status desc,ord desc,id desc [ RunTime:0.001022s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_customer_from` [ RunTime:0.003884s ]
+[ sql ] [ SQL ] SELECT * FROM `n_customer_from` WHERE  `status` = 1 ORDER BY status desc,ord desc,id desc [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_admin_user` [ RunTime:0.005951s ]
+[ sql ] [ SQL ] SELECT * FROM `n_admin_user` [ RunTime:0.000474s ]
+---------------------------------------------------------------
+[ 2018-08-28T10:13:42+08:00 ] ::1 ::1 GET /backend/customer/getdata.html?page=1&limit=15
+[ info ] newlc.lc/backend/customer/getdata.html?page=1&limit=15 [运行时间：0.108964s][吞吐率：9.18req/s] [内存消耗：4,980.16kb] [文件加载：59]
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'customer',
+    2 => 'getdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'newlc.lc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'referer' => 'http://newlc.lc/backend/customer/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=00a99467b1912b0612ac617231c01a9c',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '15',
+)
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/public/../application/backend/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '86400',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Customer->getData[ /Users/modou/Works/web/newlc/application/backend/controller/Customer.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000373s ] mysql:host=localhost;port=3306;dbname=new;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_auth_rule` [ RunTime:0.005411s ]
+[ sql ] [ SQL ] SELECT * FROM `n_auth_rule` WHERE  `name` = 'backend/Customer/getdata' LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_customer` [ RunTime:0.005227s ]
+[ sql ] [ SQL ] SELECT `t`.*,t1.name as cate_name,t2.name as from_name,`t3`.`real_name`,`t4`.`group_name` FROM `n_customer` `t` LEFT JOIN `n_customer_cate` `t1` ON `t`.`cate_id`=`t1`.`id` LEFT JOIN `n_customer_from` `t2` ON `t`.`from`=`t2`.`id` LEFT JOIN `n_admin_user` `t3` ON `t`.`auid`=`t3`.`id` LEFT JOIN `n_auth_group` `t4` ON `t`.`group_id`=`t4`.`id` ORDER BY t.status desc,t.ord desc,t.id desc LIMIT 0,15 [ RunTime:0.001041s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `n_customer` `t` LEFT JOIN `n_customer_cate` `t1` ON `t`.`cate_id`=`t1`.`id` LEFT JOIN `n_customer_from` `t2` ON `t`.`from`=`t2`.`id` LIMIT 1 [ RunTime:0.000458s ]
+---------------------------------------------------------------
+[ 2018-08-28T10:13:45+08:00 ] ::1 ::1 GET /backend/news/index.html
+[ info ] newlc.lc/backend/news/index.html [运行时间：0.125446s][吞吐率：7.97req/s] [内存消耗：5,257.68kb] [文件加载：63]
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'news',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'newlc.lc',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://newlc.lc/backend/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=00a99467b1912b0612ac617231c01a9c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/public/../application/backend/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '86400',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\News->index[ /Users/modou/Works/web/newlc/application/backend/controller/News.php ]
+[ info ] [ VIEW ] /Users/modou/Works/web/newlc/public/../application/backend/view/news/index.html [ array (
+  0 => 'config',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000626s ] mysql:host=localhost;port=3306;dbname=new;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_auth_rule` [ RunTime:0.005200s ]
+[ sql ] [ SQL ] SELECT * FROM `n_auth_rule` WHERE  `name` = 'backend/News/index' LIMIT 1 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_news_cate` [ RunTime:0.004602s ]
+[ sql ] [ SQL ] SELECT * FROM `n_news_cate` WHERE  `status` = 1 ORDER BY status desc,ord desc,id desc [ RunTime:0.001634s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_admin_user` [ RunTime:0.005880s ]
+[ sql ] [ SQL ] SELECT * FROM `n_admin_user` [ RunTime:0.000510s ]
+---------------------------------------------------------------
+[ 2018-08-28T10:13:45+08:00 ] ::1 ::1 GET /backend/news/getdata.html?page=1&limit=15
+[ info ] newlc.lc/backend/news/getdata.html?page=1&limit=15 [运行时间：0.106223s][吞吐率：9.41req/s] [内存消耗：4,848.02kb] [文件加载：59]
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'news',
+    2 => 'getdata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'newlc.lc',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'referer' => 'http://newlc.lc/backend/news/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=00a99467b1912b0612ac617231c01a9c',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '15',
+)
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/public/../application/backend/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '86400',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\News->getData[ /Users/modou/Works/web/newlc/application/backend/controller/News.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000428s ] mysql:host=localhost;port=3306;dbname=new;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_auth_rule` [ RunTime:0.005198s ]
+[ sql ] [ SQL ] SELECT * FROM `n_auth_rule` WHERE  `name` = 'backend/News/getdata' LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_news` [ RunTime:0.006422s ]
+[ sql ] [ SQL ] SELECT `t`.*,`t1`.`name`,`t2`.`real_name` FROM `n_news` `t` LEFT JOIN `n_news_cate` `t1` ON `t`.`cate_id`=`t1`.`id` LEFT JOIN `n_admin_user` `t2` ON `t`.`auid`=`t2`.`id` ORDER BY t.status desc,t.ord desc,t.id desc LIMIT 0,15 [ RunTime:0.002243s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `n_news` `t` LEFT JOIN `n_news_cate` `t1` ON `t`.`cate_id`=`t1`.`id` LIMIT 1 [ RunTime:0.000335s ]
+---------------------------------------------------------------
+[ 2018-08-28T10:13:45+08:00 ] ::1 ::1 GET /uploads/news/20180823/14cf8b568ca91d5407360bdfe26046f8.jpg
+[ info ] newlc.lc/uploads/news/20180823/14cf8b568ca91d5407360bdfe26046f8.jpg [运行时间：0.054998s][吞吐率：18.18req/s] [内存消耗：2,369.81kb] [文件加载：39]
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => 'news',
+    2 => '20180823',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'newlc.lc',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://newlc.lc/backend/news/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=00a99467b1912b0612ac617231c01a9c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-28T10:13:48+08:00 ] ::1 ::1 GET /backend/news/cateindex.html
+[ info ] newlc.lc/backend/news/cateindex.html [运行时间：0.182167s][吞吐率：5.49req/s] [内存消耗：5,662.69kb] [文件加载：70]
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'news',
+    2 => 'cateindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'newlc.lc',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://newlc.lc/backend/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=00a99467b1912b0612ac617231c01a9c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/public/../application/backend/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '86400',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\News->cateIndex[ /Users/modou/Works/web/newlc/application/backend/controller/News.php ]
+[ info ] [ VIEW ] /Users/modou/Works/web/newlc/public/../application/backend/view/news/cateindex.html [ array (
+  0 => 'config',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000798s ] mysql:host=localhost;port=3306;dbname=new;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_auth_rule` [ RunTime:0.008315s ]
+[ sql ] [ SQL ] SELECT * FROM `n_auth_rule` WHERE  `name` = 'backend/News/cateindex' LIMIT 1 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_news_cate` [ RunTime:0.003764s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `n_news_cate` WHERE  (  1=1 ) LIMIT 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT * FROM `n_news_cate` WHERE  (  1=1 ) ORDER BY status desc,ord desc,id desc LIMIT 0,15 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_auth_group` [ RunTime:0.004030s ]
+[ sql ] [ SQL ] SELECT `group_name`,`rules` FROM `n_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_admin_user` [ RunTime:0.004977s ]
+[ sql ] [ SQL ] SELECT `real_name` FROM `n_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT `group_name`,`rules` FROM `n_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT `real_name` FROM `n_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT `group_name`,`rules` FROM `n_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT `real_name` FROM `n_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT `group_name`,`rules` FROM `n_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SELECT `real_name` FROM `n_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001158s ]
+[ sql ] [ SQL ] SELECT `group_name`,`rules` FROM `n_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SELECT `real_name` FROM `n_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000358s ]
+---------------------------------------------------------------
+[ 2018-08-28T10:13:53+08:00 ] ::1 ::1 GET /backend/more/qrcode.html
+[ info ] newlc.lc/backend/more/qrcode.html [运行时间：0.091249s][吞吐率：10.96req/s] [内存消耗：4,513.24kb] [文件加载：59]
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'more',
+    2 => 'qrcode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'newlc.lc',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://newlc.lc/backend/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=00a99467b1912b0612ac617231c01a9c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/public/../application/backend/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '86400',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\More->qrcode[ /Users/modou/Works/web/newlc/application/backend/controller/More.php ]
+[ info ] [ VIEW ] /Users/modou/Works/web/newlc/public/../application/backend/view/more/qrcode.html [ array (
+  0 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000397s ] mysql:host=localhost;port=3306;dbname=new;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_auth_rule` [ RunTime:0.005964s ]
+[ sql ] [ SQL ] SELECT * FROM `n_auth_rule` WHERE  `name` = 'backend/More/qrcode' LIMIT 1 [ RunTime:0.000421s ]
+---------------------------------------------------------------
+[ 2018-08-28T10:13:54+08:00 ] ::1 ::1 GET /backend/more/count.html
+[ info ] newlc.lc/backend/more/count.html [运行时间：0.093060s][吞吐率：10.75req/s] [内存消耗：5,160.78kb] [文件加载：62]
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'more',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'newlc.lc',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://newlc.lc/backend/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=00a99467b1912b0612ac617231c01a9c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/public/../application/backend/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '86400',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\More->count[ /Users/modou/Works/web/newlc/application/backend/controller/More.php ]
+[ info ] [ VIEW ] /Users/modou/Works/web/newlc/public/../application/backend/view/more/count.html [ array (
+  0 => 'config',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000378s ] mysql:host=localhost;port=3306;dbname=new;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_auth_rule` [ RunTime:0.005604s ]
+[ sql ] [ SQL ] SELECT * FROM `n_auth_rule` WHERE  `name` = 'backend/More/count' LIMIT 1 [ RunTime:0.000594s ]
+[ sql ] [ SQL ] SELECT count(id) as ocount, date_format(FROM_UNIXTIME( `ctime`),'%m月%d日') odate  FROM `n_customer` where   `ctime`>1532830434 and `ctime`<1535471999 group by odate [ RunTime:0.000621s ]
+---------------------------------------------------------------
+[ 2018-08-28T10:13:55+08:00 ] ::1 ::1 GET /backend/more/long.html
+[ info ] newlc.lc/backend/more/long.html [运行时间：0.112842s][吞吐率：8.86req/s] [内存消耗：4,411.72kb] [文件加载：58]
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'more',
+    2 => 'long',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'newlc.lc',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://newlc.lc/backend/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=00a99467b1912b0612ac617231c01a9c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/public/../application/backend/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '86400',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\More->long[ /Users/modou/Works/web/newlc/application/backend/controller/More.php ]
+[ info ] [ VIEW ] /Users/modou/Works/web/newlc/public/../application/backend/view/more/long.html [ array (
+  0 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000450s ] mysql:host=localhost;port=3306;dbname=new;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_auth_rule` [ RunTime:0.010763s ]
+[ sql ] [ SQL ] SELECT * FROM `n_auth_rule` WHERE  `name` = 'backend/More/long' LIMIT 1 [ RunTime:0.000646s ]
+---------------------------------------------------------------
+[ 2018-08-28T10:13:56+08:00 ] ::1 ::1 GET /backend/more/message.html
+[ info ] newlc.lc/backend/more/message.html [运行时间：0.090669s][吞吐率：11.03req/s] [内存消耗：4,513.84kb] [文件加载：59]
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'more',
+    2 => 'message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'newlc.lc',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://newlc.lc/backend/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=00a99467b1912b0612ac617231c01a9c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/public/../application/backend/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '86400',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\More->message[ /Users/modou/Works/web/newlc/application/backend/controller/More.php ]
+[ info ] [ VIEW ] /Users/modou/Works/web/newlc/public/../application/backend/view/more/message.html [ array (
+  0 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000391s ] mysql:host=localhost;port=3306;dbname=new;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_auth_rule` [ RunTime:0.004542s ]
+[ sql ] [ SQL ] SELECT * FROM `n_auth_rule` WHERE  `name` = 'backend/More/message' LIMIT 1 [ RunTime:0.000467s ]
+---------------------------------------------------------------
+[ 2018-08-28T10:13:57+08:00 ] ::1 ::1 GET /backend/more/email.html
+[ info ] newlc.lc/backend/more/email.html [运行时间：0.295871s][吞吐率：3.38req/s] [内存消耗：4,514.72kb] [文件加载：59]
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'more',
+    2 => 'email',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'newlc.lc',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://newlc.lc/backend/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=00a99467b1912b0612ac617231c01a9c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/public/../application/backend/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '86400',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\More->email[ /Users/modou/Works/web/newlc/application/backend/controller/More.php ]
+[ info ] [ VIEW ] /Users/modou/Works/web/newlc/public/../application/backend/view/more/email.html [ array (
+  0 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000441s ] mysql:host=localhost;port=3306;dbname=new;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_auth_rule` [ RunTime:0.006505s ]
+[ sql ] [ SQL ] SELECT * FROM `n_auth_rule` WHERE  `name` = 'backend/More/email' LIMIT 1 [ RunTime:0.000450s ]
+---------------------------------------------------------------
+[ 2018-08-28T10:13:58+08:00 ] ::1 ::1 GET /backend/more/express.html
+[ info ] newlc.lc/backend/more/express.html [运行时间：0.098649s][吞吐率：10.14req/s] [内存消耗：4,562.82kb] [文件加载：59]
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'more',
+    2 => 'express',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'newlc.lc',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://newlc.lc/backend/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=00a99467b1912b0612ac617231c01a9c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/public/../application/backend/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '86400',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\More->express[ /Users/modou/Works/web/newlc/application/backend/controller/More.php ]
+[ info ] [ VIEW ] /Users/modou/Works/web/newlc/public/../application/backend/view/more/express.html [ array (
+  0 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000439s ] mysql:host=localhost;port=3306;dbname=new;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_auth_rule` [ RunTime:0.005915s ]
+[ sql ] [ SQL ] SELECT * FROM `n_auth_rule` WHERE  `name` = 'backend/More/express' LIMIT 1 [ RunTime:0.000449s ]
+---------------------------------------------------------------
+[ 2018-08-28T10:14:10+08:00 ] ::1 ::1 GET /backend/more/express.html?sn=220127092292
+[ info ] newlc.lc/backend/more/express.html?sn=220127092292 [运行时间：0.779960s][吞吐率：1.28req/s] [内存消耗：4,335.35kb] [文件加载：58]
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'more',
+    2 => 'express',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'newlc.lc',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://newlc.lc/backend/more/express.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=00a99467b1912b0612ac617231c01a9c',
+)
+[ info ] [ PARAM ] array (
+  'sn' => '220127092292',
+)
+[ info ] [ LANG ] /Users/modou/Works/web/newlc/public/../application/backend/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => '86400',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\More->express[ /Users/modou/Works/web/newlc/application/backend/controller/More.php ]
+[ info ] [ VIEW ] /Users/modou/Works/web/newlc/public/../application/backend/view/more/express.html [ array (
+  0 => 'config',
+  1 => 'ress',
+  2 => 'param',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000396s ] mysql:host=localhost;port=3306;dbname=new;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `n_auth_rule` [ RunTime:0.004242s ]
+[ sql ] [ SQL ] SELECT * FROM `n_auth_rule` WHERE  `name` = 'backend/More/express' LIMIT 1 [ RunTime:0.000445s ]

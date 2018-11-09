@@ -1,0 +1,396 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:88:"/Users/modou/Works/web/newlc/public/../application/backend/view/config_manage/index.html";i:1534390924;s:82:"/Users/modou/Works/web/newlc/public/../application/backend/view/public/header.html";i:1534318478;s:82:"/Users/modou/Works/web/newlc/public/../application/backend/view/public/footer.html";i:1533524129;}*/ ?>
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><?php echo $config['1']; ?>-<?php echo lang('name'); ?></title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="__STATICBACKEND__/layuiadmin/layui/css/layui.css" media="all">
+  <link rel="stylesheet" href="__STATICBACKEND__/layuiadmin/style/admin.css" media="all">
+  <link rel="stylesheet" type="text/css" href="__STATICBACKEND__/other/pagelist.css" />
+  <script type="text/javascript" src="__STATICBACKEND__/other/jquery.min.js"></script>
+  <script src="__STATICBACKEND__/layuiadmin/layui/layui.js"></script> 
+  <script src="__STATICBACKEND__/other/main.js"></script> 
+  <link rel="Shortcut Icon" href="/uploads/logo/<?php echo $config['21']; ?>" />
+  <style type="text/css">
+    .reqcolor{
+      color:red;
+    }
+  </style>
+</head>
+<body>
+
+
+<style type="text/css">
+html{
+    background: #fff;
+}
+/*蓝色按钮,绝对定位*/
+.blueButton
+{
+    position: absolute;
+    display: block;
+    float:left;
+    width: 100px;
+    height: 30px;
+    background-color: #B8860B;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font:normal normal normal 16px/30px 'Microsoft YaHei';
+    cursor: pointer;
+    border-radius: 4px;
+}
+.blueButton:hover
+{
+     text-decoration: none;
+}
+/*自定义上传,位置大小都和a完全一样,而且完全透明*/
+.myFileUpload,.myFileUpload1,.myFileUpload2,.myFileUpload3
+{
+    position: absolute;
+    display: block;
+    float:left;
+    width: 100px;
+    height:30px;
+    opacity: 0;
+}
+/*显示上传文件夹名的Div*/
+.show,.show1,.show2,.show3
+{
+    position: absolute;
+    top:30px;
+    width: 100%;
+    height: 30px;
+    float:left;
+    font:normal normal normal 14px/30px 'Microsoft YaHei';
+}
+</style>
+<div style="width:98%;margin:0 auto;margin-top: 20px; ">
+    <div class="layui-tab layui-tab-card">
+      <ul class="layui-tab-title">
+        <li class="layui-this">系统信息</li>
+        <li>短信设置</li>
+        <li>邮件设置</li>
+        <li>快递接口</li>
+        <li>图片设置</li>
+      </ul>
+      <div class="layui-tab-content" style="width:50%;">
+        <div class="layui-tab-item layui-show" style="margin-top:20px;">
+            <form class="layui-form" action="<?php echo url('ConfigManage/index'); ?>" style="" method='post' enctype="multipart/form-data">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">网站名称<span style="color:red;"></span></label>
+                    <div class="layui-input-block">
+                      <input type="text" name="1" lay-verify=""  placeholder="" class="layui-input" value="<?php echo !empty($data['1'])?$data['1']:''; ?>">
+                    </div>
+                    <label class="layui-form-label"></label>
+                    <label class="lable-style desc-style">网站名称，将显示在前台顶部欢迎信息等位置</label>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">网站备案号<span style="color:red;"></span></label>
+                    <div class="layui-input-block">
+                      <input type="text" name="2" lay-verify=""  placeholder="" class="layui-input" value="<?php echo !empty($data['2'])?$data['2']:''; ?>">
+                    </div>
+                    <label class="layui-form-label"></label>
+                    <label class="lable-style desc-style">网站备案号，将显示在前台底部欢迎信息等位置</label>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">网站关键字<span style="color:red;"></span></label>
+                    <div class="layui-input-block">
+                      <input type="text" name="3" lay-verify=""  placeholder="" class="layui-input" value="<?php echo !empty($data['3'])?$data['3']:''; ?>">
+                    </div>
+                    <label class="layui-form-label"></label>
+                    <label class="lable-style desc-style">网站关键字，便于SEO</label>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">联系人<span style="color:red;"></span></label>
+                    <div class="layui-input-block">
+                      <input type="text" name="4" lay-verify=""  placeholder="" class="layui-input" value="<?php echo !empty($data['4'])?$data['4']:''; ?>">
+                    </div>
+                    <label class="layui-form-label"></label>
+                    <label class="lable-style desc-style">联系人</label>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">联系电话<span style="color:red;"></span></label>
+                    <div class="layui-input-block">
+                      <input type="text" name="5" lay-verify=""  placeholder="" class="layui-input" value="<?php echo !empty($data['5'])?$data['5']:''; ?>">
+                    </div>
+                    <label class="layui-form-label"></label>
+                    <label class="lable-style desc-style">方便遇到问题时咨询</label>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">固话<span style="color:red;"></span></label>
+                    <div class="layui-input-block">
+                      <input type="text" name="6" lay-verify=""  placeholder="" class="layui-input" value="<?php echo !empty($data['6'])?$data['6']:''; ?>">
+                    </div>
+                    <label class="layui-form-label"></label>
+                    <label class="lable-style desc-style">方便客户联系</label>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">具体地址<span style="color:red;"></span></label>
+                    <div class="layui-input-block">
+                      <input type="text" name="7" lay-verify=""  placeholder="" class="layui-input" value="<?php echo !empty($data['7'])?$data['7']:''; ?>">
+                    </div>
+                    <label class="layui-form-label"></label>
+                    <label class="lable-style desc-style">具体地址</label>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">客服QQ1<span style="color:red;"></span></label>
+                    <div class="layui-input-block">
+                      <input type="text" name="8" lay-verify=""  placeholder="" class="layui-input" value="<?php echo !empty($data['8'])?$data['8']:''; ?>">
+                    </div>
+                    <label class="layui-form-label"></label>
+                    <label class="lable-style desc-style">方便用户遇到问题时咨询</label>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">客服QQ2<span style="color:red;"></span></label>
+                    <div class="layui-input-block">
+                      <input type="text" name="9" lay-verify=""  placeholder="" class="layui-input" value="<?php echo !empty($data['9'])?$data['9']:''; ?>">
+                    </div>
+                    <label class="layui-form-label"></label>
+                    <label class="lable-style desc-style">方便用户遇到问题时咨询</label>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">客服QQ3<span style="color:red;"></span></label>
+                    <div class="layui-input-block">
+                      <input type="text" name="10" lay-verify=""  placeholder="" class="layui-input" value="<?php echo !empty($data['10'])?$data['10']:''; ?>">
+                    </div>
+                    <label class="layui-form-label"></label>
+                    <label class="lable-style desc-style">方便用户遇到问题时咨询</label>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                      <button class="layui-btn" lay-submit="" lay-filter="">立即提交</button>
+                      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="layui-tab-item">
+            <form class="layui-form" action="<?php echo url('ConfigManage/index'); ?>" style="margin-top:20px;" method='post' enctype="multipart/form-data">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">短信平台<span style="color:red;"></span></label>
+                    <div class="layui-input-block">
+                      <input type="text" name="11" lay-verify=""  placeholder="" class="layui-input" value="<?php echo !empty($data['11'])?$data['11']:''; ?>">
+                    </div>
+                    <label class="layui-form-label"></label>
+                    <label class="lable-style desc-style"></label>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">短信账号<span style="color:red;"></span></label>
+                    <div class="layui-input-block">
+                      <input type="text" name="12" lay-verify=""  placeholder="" class="layui-input" value="<?php echo !empty($data['12'])?$data['12']:''; ?>">
+                    </div>
+                    <label class="layui-form-label"></label>
+                    <label class="lable-style desc-style">短信平台配置appkey/keyid</label>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">短信密码<span style="color:red;"></span></label>
+                    <div class="layui-input-block">
+                      <input type="text" name="13" lay-verify=""  placeholder="" class="layui-input" value="<?php echo !empty($data['13'])?$data['13']:''; ?>">
+                    </div>
+                    <label class="layui-form-label"></label>
+                    <label class="lable-style desc-style">短信平台配置secretKey</label>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                      <button class="layui-btn" lay-submit="" lay-filter="">立即提交</button>
+                      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="layui-tab-item">
+            <form class="layui-form" action="<?php echo url('ConfigManage/index'); ?>" style="margin-top:20px;" method='post' enctype="multipart/form-data">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">SMTP<span style="color:red;"></span></label>
+                    <div class="layui-input-block">
+                      <input type="text" name="14" lay-verify=""  placeholder="" class="layui-input" value="<?php echo !empty($data['14'])?$data['14']:''; ?>">
+                    </div>
+                    <label class="layui-form-label"></label>
+                    <label class="lable-style desc-style">发送邮箱的smtp地址。如: smtp.gmail.com或smtp.qq.com</label>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">SMTP端口<span style="color:red;"></span></label>
+                    <div class="layui-input-block">
+                      <input type="text" name="15" lay-verify=""  placeholder="" class="layui-input" value="<?php echo !empty($data['15'])?$data['15']:''; ?>">
+                    </div>
+                    <label class="layui-form-label"></label>
+                    <label class="lable-style desc-style">smtp的端口。默认为25。具体请参看各STMP服务商的设置说明 （如果使用Gmail，请将端口设为465）</label>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">邮箱账号<span style="color:red;"></span></label>
+                    <div class="layui-input-block">
+                      <input type="text" name="16" lay-verify=""  placeholder="" class="layui-input" value="<?php echo !empty($data['16'])?$data['16']:''; ?>">
+                    </div>
+                    <label class="layui-form-label"></label>
+                    <label class="lable-style desc-style">使用发送邮件的邮箱账号</label>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">授权码<span style="color:red;"></span></label>
+                    <div class="layui-input-block">
+                      <input type="text" name="17" lay-verify=""  placeholder="" class="layui-input" value="<?php echo !empty($data['17'])?$data['17']:''; ?>">
+                    </div>
+                    <label class="layui-form-label"></label>
+                    <label class="lable-style desc-style">使用发送邮件的邮箱密码,或者授权码。具体请参看各STMP服务商的设置说明</label>
+                </div>
+
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                      <button class="layui-btn" lay-submit="" lay-filter="">立即提交</button>
+                      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="layui-tab-item">
+            <form class="layui-form" action="<?php echo url('ConfigManage/index'); ?>" style="margin-top:20px;" method='post' enctype="multipart/form-data">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">商户ID<span style="color:red;"></span></label>
+                    <div class="layui-input-block">
+                      <input type="text" name="22" lay-verify=""  placeholder="" class="layui-input" value="<?php echo !empty($data['22'])?$data['22']:''; ?>">
+                    </div>
+                    <label class="layui-form-label"></label>
+                    <label class="lable-style desc-style">仅适用于快递鸟平台接口，商户ID对应EBusinessID</label>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">商户秘钥<span style="color:red;"></span></label>
+                    <div class="layui-input-block">
+                      <input type="text" name="23" lay-verify=""  placeholder="" class="layui-input" value="<?php echo !empty($data['23'])?$data['23']:''; ?>">
+                    </div>
+                    <label class="layui-form-label"></label>
+                    <label class="lable-style desc-style">仅适用于快递鸟平台接口，商户秘钥对应AppKey</label>
+                </div>
+                
+
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                      <button class="layui-btn" lay-submit="" lay-filter="">立即提交</button>
+                      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="layui-tab-item">
+            <form class="layui-form" action="<?php echo url('ConfigManage/configLogo'); ?>" style="margin-top:20px;" method='post' enctype="multipart/form-data">
+               <div class="layui-form-item" style="margin:10px 0px;" id="add">
+                    <label class="layui-form-label">网站首页Logo<span style="color:red;"></span></label>
+                    <div class="layui-input-block">
+                         <a href='javascript:void(0);' class="blueButton">选择图片</a>
+                        <input type="file" name="logo" id="file"  class="myFileUpload" ><div class="show"></div>
+                    </div>
+                </div>
+                <div class="layui-form-item" style="color:#C4C4C4;">
+                    <label class="layui-form-label"></label>
+                     <div class="layui-input-block">
+                        建议尺寸大小：200*150
+                    </div>
+                </div>
+
+                <div class="layui-form-item" style="margin:10px 0px;" id="add">
+                    <label class="layui-form-label">管理中心Logo<span style="color:red;"></span></label>
+                    <div class="layui-input-block">
+                         <a href='javascript:void(0);' class="blueButton">选择图片</a>
+                        <input type="file" name="logo_backend" id="file"  class="myFileUpload1" ><div class="show1"></div>
+                    </div>
+                </div>
+                <div class="layui-form-item" style="color:#C4C4C4;">
+                    <label class="layui-form-label"></label>
+                     <div class="layui-input-block">
+                        <span style="color:red;">未启用！</span>建议尺寸大小：80*40
+                    </div>
+                </div>
+                <div class="layui-form-item" style="margin:10px 0px;" id="add">
+                    <label class="layui-form-label">后台登录Logo<span style="color:red;"></span></label>
+                    <div class="layui-input-block">
+                         <a href='javascript:void(0);' class="blueButton">选择图片</a>
+                        <input type="file" name="logo_login" id="file"  class="myFileUpload2" ><div class="show2"></div>
+                    </div>
+                </div>
+                <div class="layui-form-item" style="color:#C4C4C4;">
+                    <label class="layui-form-label"></label>
+                     <div class="layui-input-block">
+                        建议尺寸大小：300*60
+                    </div>
+                </div>
+                <div class="layui-form-item" style="margin:10px 0px;" id="add">
+                    <label class="layui-form-label">网站图标 ICON<span style="color:red;"></span></label>
+                    <div class="layui-input-block">
+                         <a href='javascript:void(0);' class="blueButton">选择图片</a>
+                        <input type="file" name="icon" id="file"  class="myFileUpload3" ><div class="show3"></div>
+                    </div>
+                </div>
+                <div class="layui-form-item" style="color:#C4C4C4;">
+                    <label class="layui-form-label"></label>
+                     <div class="layui-input-block">
+                        建议尺寸大小：80*80
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                      <button class="layui-btn" lay-submit="" lay-filter="">立即提交</button>
+                      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function()
+    {
+        $(".myFileUpload").change(function()
+        {
+            var arrs=$(this).val().split('\\');
+            var filename=arrs[arrs.length-1];
+            $(".show").html(filename);
+        });
+    });
+$(document).ready(function()
+    {
+        $(".myFileUpload1").change(function()
+        {
+            var arrs=$(this).val().split('\\');
+            var filename=arrs[arrs.length-1];
+            $(".show1").html(filename);
+        });
+    });
+$(document).ready(function()
+    {
+        $(".myFileUpload2").change(function()
+        {
+            var arrs=$(this).val().split('\\');
+            var filename=arrs[arrs.length-1];
+            $(".show2").html(filename);
+        });
+    });
+$(document).ready(function()
+    {
+        $(".myFileUpload3").change(function()
+        {
+            var arrs=$(this).val().split('\\');
+            var filename=arrs[arrs.length-1];
+            $(".show3").html(filename);
+        });
+    });
+</script> 
+
+<script>
+  layui.config({
+    base: '__STATICBACKEND__/layuiadmin/' //静态资源所在路径
+  }).extend({
+    index: 'lib/index' //主入口模块
+  }).use(['index', 'form', 'laydate'], function(){
+    var $ = layui.$
+    ,admin = layui.admin
+    ,element = layui.element
+    ,layer = layui.layer
+    ,laydate = layui.laydate
+    ,form = layui.form;
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+{include file="public/header" /}
+  <div class="layui-fluid">
+    <div class="layui-card">
+      <div class="layui-card-body" style="padding: 15px;">
+        <form class="layui-form" action="" id="search" onkeydown="if(event.keyCode==13){return false;}">
+          <div class="layui-form-item">
+            <label class="layui-form-label"><span class="reqcolor">*</span>登录账户</label>
+            <div class="layui-input-block">
+              <input type="text" name="admin_name" lay-verify="required|admin_name" autocomplete="off" placeholder="" class="layui-input" value="{$data['admin_name']?$data['admin_name']:''}" >
+            </div>
+          </div>
+          <div class="layui-form-item" >
+            <label class="layui-form-label"><span class="reqcolor">*</span>姓名</label>
+            <div class="layui-input-block">
+              <input type="text" name="real_name" lay-verify="required" autocomplete="off" placeholder="" class="layui-input" value="{$data['real_name']?$data['real_name']:''}">
+            </div>
+          </div>
+         
+          <div class="layui-form-item">
+            <label class="layui-form-label">性别</label>
+            <div class="layui-input-block">
+              <input type="radio" name="sex" value="1" title="男"  {if condition="$data['sex']=='1'"} checked {/if}>
+              <input type="radio" name="sex" value="2" title="女" {if condition="$data['sex']=='2'"} checked {/if} >
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <label class="layui-form-label">手机</label>
+            <div class="layui-input-block">
+              <input type="tel" name="mobile" autocomplete="off" placeholder="" class="layui-input" value="{$data['mobile']?$data['mobile']:''}" >
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <label class="layui-form-label">邮箱</label>
+            <div class="layui-input-block">
+              <input type="text" name="email"  autocomplete="off" placeholder="" class="layui-input" value="{$data['email']?$data['email']:''}" name="email" >
+            </div>
+          </div>
+         
+          {if condition="$data['gp_role']=='1'"}
+          <div class="layui-form-item">
+              <label class="layui-form-label"><span class="reqcolor">*</span>所属部门</label>
+              <div class="layui-input-block">
+                <select name="group_id" lay-verify="required" lay-search="">
+                  <option value="">请选择</option>
+                  {foreach name='grouplist' item='v'}
+                  {eq name="v.id" value="$data['group_id']"}
+                  <option value="{$v.id}" selected>{$v.group_name}</option>  
+                  {else /}
+                  <option value="{$v.id}">{$v.group_name}</option>
+                  {/eq}
+                  {/foreach}
+                </select>
+              </div>
+          </div>
+          <div class="layui-form-item">
+            <label class="layui-form-label">主管</label>
+            <div class="layui-input-block">
+              <input type="radio" name="group_role" value="3" title="不是"  {if condition="$data['group_role']=='3'"} checked {/if}>
+              <input type="radio" name="group_role" value="2" title="是" {if condition="$data['group_role']=='2'"} checked {/if} >
+            </div>
+          </div>
+          {/if}
+           <div class="layui-form-item">
+            <label class="layui-form-label">状态</label>
+            <div class="layui-input-block">
+              <input type="radio" name="status" value="1" title="启用"  {if condition="$data['status']==1"} checked {/if}>
+
+              <input type="radio" name="status" value="0" title="锁定" {if condition="$data['status']==0"} checked {/if}>
+            </div>
+          </div>
+          <div class="layui-form-item layui-layout-admin">
+            <div class="layui-input-block">
+              <div class="layui-footer" style="left: 0;">
+                <input  type="hidden" name='id' value="{$data['id']?$data['id']:''}" id='hidden-id'>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                <button class="layui-btn" lay-submit="" lay-filter="component-form-demo1">立即提交</button>
+                
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+  layui.config({
+    base: '__STATICBACKEND__/layuiadmin/' //静态资源所在路径
+  }).extend({
+    index: 'lib/index' //主入口模块
+  }).use(['index', 'form', 'laydate'], function(){
+    var $ = layui.$
+    ,admin = layui.admin
+    ,element = layui.element
+    ,layer = layui.layer
+    ,laydate = layui.laydate
+    ,form = layui.form;
+    /* 自定义验证规则 */
+    form.verify({
+      admin_name: function(value){
+        if(value.length < 4){
+          return '登录账号至少得4个字符';
+        }
+      }
+     
+    });
+    /* 监听提交 */
+    form.on('submit(component-form-demo1)', function(data){
+      var url = "{:url('adminUsers/adminAdd')}";
+      var data =$("#search").serializeArray();
+      jqueryAjax('POST',url,data,successLayui);
+      return false;
+    });
+  });
+  </script>
+</body>
+</html>

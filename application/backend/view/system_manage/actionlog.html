@@ -1,0 +1,47 @@
+{include file="public/header" /}
+<style type="text/css">
+  html{
+    background: #fff;
+  }
+  .demoTable{
+    text-align: center;
+  }
+</style>
+<div style="width:98%;margin:0 auto;margin-top: 20px; ">
+  <div class="demoTable">
+    <form action="<?php echo url('SystemManage/actionLog'); ?>" method="get" >
+    <div class="layui-input-inline">
+        <input type="text" name="admin_name" placeholder="账号" autocomplete="off" class="layui-input" value="{$param['admin_name']?$param['admin_name']:''}" >
+    </div>
+    <div class="layui-input-inline">
+        <input type="text" name="content" placeholder="查找内容" autocomplete="off" class="layui-input" value="{$param['content']?$param['content']:''}">
+    </div>
+    <button class="layui-btn" data-type="reload">搜索</button>
+    </form>
+</div>
+<div class="layui-form">
+  <table class="layui-table">
+    <thead>
+      <tr>
+        <th>账号</th>
+        <th>内容</th>
+        <th>操作ip</th>
+        <th>时间</th>
+      </tr> 
+    </thead>
+    <tbody>
+      {foreach $data as $v}
+      <tr>
+        <td>{$v.admin_name}</td>
+        <td>{$v.content}</td>
+        <td>{$v.ip}</td>
+        <td>{$v.created_t|date="Y-m-d H:i:s",###}</td>
+      </tr>
+      {/foreach}
+    </tbody>
+  </table>
+</div>
+<div class="pagelist">
+  {$data->render()}
+</div>
+{include file="public/footer" /}
